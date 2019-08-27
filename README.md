@@ -53,6 +53,7 @@ Edit your user forms so you have a checkbox item for each favourite. Figure out 
 - [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 - [document.location](https://developer.mozilla.org/en-US/docs/Web/API/Document/location)
 - [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
+- [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
 
 
 
