@@ -9,25 +9,10 @@
 
 <body>
   <div class="container-fluid">
-    <div id="friperieHeader">Friperie</div>
-    
-    <div>
-      <form class='searchForm' action="/" method="post"></form>
-        <label for="suburbName"></label>
-        <input class='searchBox' list="suburbName" name="suburbName">
-        
-        <datalist id="suburbs">
-          {{#each suburb}}
-          <option value="{{suburb}}"></option>
-          {{/each}}
-        </datalist>
-      
-      <button id="searchButton">Search!</button>
-      
-    </div>
-
-    {{{body}}}
+    <div id="friperieHeader" class="jumbotron">Friperie</div>
+      {{{body}}}
   </div>
 </body>
 
 </html>
+
