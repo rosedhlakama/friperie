@@ -1,0 +1,51 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+#friperieHeader{    
+    background-color: white;
+
+  }
+#headerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#suburbResults, #searchButton{
+    background-color: #f3d4b3;
+    padding: 13px;
+    border: 2.5px solid #383838;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 500px;
+  }
+  #suburbResults {
+    width: 600px;
+  }
+  #searchButton {
+    width: 200px;
+  }
+
+  form {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    padding-left: 500px;
+    background-color: rgb(252, 252, 252);
+
+  }
+
+  .form-row {
+    display: flex;
+      
+  }
+
+  #searchResults{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+  }

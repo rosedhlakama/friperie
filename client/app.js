@@ -5,7 +5,7 @@ export function launchApp() {
 
 function displayHeader() {
   let html = `
-  <h1>Friperie</h1>
+  <img src="/images/Friperie.png" id="headerimg" alt="header" width="700">
 `
   document.getElementById('friperieHeader').innerHTML = html
 }
