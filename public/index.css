@@ -34,7 +34,8 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    padding-left: 500px;
+    width: 900px;
+    margin: 0 auto;
     background-color: rgb(252, 252, 252);
 
   }
@@ -47,5 +48,8 @@ body {
   #searchResults{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:900px;
   }

@@ -19,7 +19,7 @@ router.get('/opshops', (req, res) => {
           request.get('https://maps.googleapis.com/maps/api/place/details/json?placeid=' + opshopId + '&fields=name,formatted_address,formatted_phone_number,opening_hours&key=' + apiKey)
             .then(result => {
               const opshop = result.body.result
-              res.render('index', {opshop})
+              res.json(opshop)
             })
           
         })
