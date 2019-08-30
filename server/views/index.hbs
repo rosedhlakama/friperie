@@ -1,40 +1,30 @@
-<ul>
- 
-    <li>{{opshop.name}}</li>
-    {{#each opshop.opening_hours.weekday_text}}
-    <li>{{this}}</li>
-    {{/each }}
-</ul>
+<div>
+  <form>
 
+    <label>Search by suburb:</label>
+    <select id="suburbResults">
+      <option value="1">CBD</option>
+      <option value="2">Kilbirnie</option>
+      <option value="3">Newtown</option>
+      <option value="4">Miramar</option>
+    </select>
 
+  </form>
 
-    
-  <div>
-    <form>
-      
-        <label>Search by suburb:</label>
-        <select id = "suburbResults">
-              <option value = "1">CBD</option>
-              <option value = "2">Kilbirnie</option>
-              <option value = "3">Newtown</option>
-              <option value = "4">Miramar</option>
-            </select>
-    
-    </form>
-    
-    <button id="searchButton">Search!</button>
-    
+  <button id="searchButton">Search!</button>
+
+</div>
+
+<div>
+  <div id="displayResults">
+    <h4>Search Results</h4>
   </div>
 
-  <div>
-    <div id="displayResults">Search Results</div>
-    <div class="row">
-      <div class="col-lg-4 col-sm-6">
-        <div class="card">
-          <div class="card-title" id="opShopName">NAME</div>
-          <div class="card-subtitle" id="opShopAddress">Address:</div>
-          <div class="card-text" id="opShopHours">Hours:</div>
-        </div>  
+  <div class="row">
+    <div class="col-lg-6 col-sm-2">
+      <div id="opShop" class="card">
+
       </div>
     </div>
   </div>
+</div>

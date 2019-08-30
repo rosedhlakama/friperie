@@ -1,6 +1,10 @@
+import { getListofPlaces } from "./api";
+import request from 'superagent'
+
 export function launchApp() {
   displayHeader()
   displaySearchBar()
+  listofPlaces()
 }
 
 function displayHeader() {
@@ -15,19 +19,26 @@ function displaySearchBar() {
   button.addEventListener('click', () => performSearch())
 }
 
-function performSearch() {
-  console.log('search button pressed')
-  // id="suburbResults"
-  // need API info of suburbs to loop through
-  // OR list directly in main HBS file
-  // OR create table to store in DB
+
+function listofPlaces() {
+  request
+    .get('/opshops')
+    .then(result => {
+      let html = `
+        <h3>Name: ${result.body.name}</h3>
+        <h4>Address: ${result.body.formatted_address}</h4>
+        <ul>
+        ${result.body.opening_hours.weekday_text.map(hoursHTML).join('\n')}
+      
+        </ul>
+        `
+      document.getElementById('opShop').innerHTML = html
+    })
 }
 
-// function displayResults() {
-  // take suburbResults
-  // display underneath search bar
-// }
-
+function hoursHTML(day) {
+  return `<li>${day}</li>`
+}
 
 
 
