@@ -1,8 +1,11 @@
 <ul>
-  {{#each opshops}}
-    <li>{{name}} {{formatted_address}}</li>
-  {{/each}}
+ 
+    <li>{{opshop.name}}</li>
+    {{#each opshop.opening_hours.weekday_text}}
+    <li>{{this}}</li>
+    {{/each }}
 </ul>
+
 
 
     
