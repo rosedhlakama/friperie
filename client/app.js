@@ -24,15 +24,14 @@ function listofPlaces() {
   request
     .get('/opshops')
     .then(result => {
-      console.log(result.body)
       let html = `
-    <h3>Name: ${result.body.name}</h3>
-    <h4>Address: ${result.body.formatted_address}</h4>
-    <ul>
-    ${result.body.opening_hours.weekday_text.map(hoursHTML).join('\n')}
-   
-    </ul>
-    `
+        <h3>Name: ${result.body.name}</h3>
+        <h4>Address: ${result.body.formatted_address}</h4>
+        <ul>
+        ${result.body.opening_hours.weekday_text.map(hoursHTML).join('\n')}
+      
+        </ul>
+        `
       document.getElementById('opShop').innerHTML = html
     })
 }
